@@ -1,7 +1,7 @@
 
 import './App.css';
 import Alert from './components/Alert';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import { useState } from 'react';
@@ -43,7 +43,7 @@ function App() {
   return (
    <>
     
-   <BrowserRouter>
+   <HashRouter>
 
         <Navbar title="TextUtils"  mode={dmode} togglemode={toggleMode} About={"Aboutus"} myim={myim}/>
         <Alert alert={alert}/>
@@ -56,7 +56,7 @@ function App() {
             <Route  exact path="/" element={ <TextForm heading="Text Utils ord Count Remove Extra Spaces..."  mode={dmode} showAlert={showAlert} />}/>
           </Routes> 
          </div> 
-      </BrowserRouter>
+      </HashRouter>
    </>
   );
 }

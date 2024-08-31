@@ -15,9 +15,9 @@ export default function Navbar(props) {
           <div className="collapse navbar-collapse mx-2" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-              <a className={`nav-link ${location.pathname === "/" ? "active act" : ""}`} aria-current="page" href="/">Home</a>
+              <a className={`nav-link ${location.pathname === "/" ? "active act" : ""}`} aria-current="page" href="#/">Home</a>
               </li>
-              <li><a className={`nav-link ${location.pathname === "/about" ? "active act" : ""}`} href="about">{props.About}</a></li>
+              <li><a className={`nav-link ${location.pathname === "/about" ? "active act" : ""}`} href="#/about">{props.About}</a></li>
             </ul>
           </div>
           <div className="form-check form-switch">
