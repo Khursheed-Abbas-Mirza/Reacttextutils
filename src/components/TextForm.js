@@ -53,7 +53,7 @@ export default function TextForm(props) {
 
   return (
     <>
-    <div className="container1 mx-3">
+    <div className="container1 mx-7">
       <div style={{height:"50px"}} className="my-5"><h1 className="my-4" >Enter Text Here :<span id="myspan" >{atext}</span><Cursor/></h1></div>
           
           <div>
