@@ -8,6 +8,7 @@ export default function TextForm(props) {
     words:["Convert to UpperCase",
       "Convert to LowerCase",
       "Convert to Sentence Case",
+      "Remove Punctuations",
       "Remove Extra Spaces"
     ],
     loop:{},
@@ -49,11 +50,16 @@ export default function TextForm(props) {
     setText(context)
     props.showAlert("Text has Converted to Sentence case","success")
   }
+  const removepunc=()=>{
+    let newtext=text.replace(/[^\w\s]/g,'')
+    setText(newtext)
+    props.showAlert("Removed Punctuations","success")
+  }
 
 
   return (
     <>
-    <div className="container1 mx-7">
+    <div className="container1 my-5">
       <div style={{height:"50px"}} className="my-5"><h1 className="my-4" >Enter Text Here :<span id="myspan" >{atext}</span><Cursor/></h1></div>
           
           <div>
@@ -62,8 +68,9 @@ export default function TextForm(props) {
             <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={hup}>Convert to UpperCase</button>
             <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={hlp}>Convert to LowerCase</button>
             <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={tsc}>Convert to SentenceCase</button>
-            <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={clrscr}>Clear</button>
+            <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={removepunc}>Remove Punctutions</button>
             <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={rmes}>Remove Extra space</button>
+            <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={clrscr}>Clear</button>
             <CopyToClipboard text={text} onCopy={()=>{ props.showAlert("Copied to Clipboard","success")}}><button disabled={text.length===0} className="btn btn-primary mx-1 my-1">Copy</button></CopyToClipboard>
     </div>
     <div className="container2 mx-3 my-2">

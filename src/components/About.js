@@ -18,7 +18,7 @@ export default function About(props) {
            </h2>
            <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
              <div className="accordion-body" style={mystyle}>
-               <strong>Analyze Your Text.</strong> Textutils gives you a way to analyze your text quickly and efficiently. Be it word count, character count or Convert to Upper Case,Lower-case,etc..
+               <strong>Analyze Your Text.</strong> Textutils gives you a way to analyze your text quickly and efficiently. Be it word count, character count or Convert to Upper Case,Lower-case,Sentence-Case
              </div>
            </div>
          </div>
@@ -31,7 +31,7 @@ export default function About(props) {
            <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
              <div className="accordion-body" style={mystyle}>
                <strong>Free to use.</strong> 
-               TextUtils is a free character counter tool that provides instant character count & word count statistics for a given text. TextUtils reports the number of words and characters. Thus it is suitable for writing text with word/ character limit.
+               TextUtils is a free character counter tool that provides instant character count & word count statistics for a given text. TextUtils reports the number of words and characters. Thus it is suitable for writing text with word character limit.
                      </div>
              </div>
            </div>

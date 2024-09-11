@@ -6,7 +6,7 @@ export default function Navbar(props) {
   const location=useLocation();
   return (
     <>
-      <nav className='navbar navbar-expand-lg bg-body-tertiary nav-tabs fixed-top' id="navbarToggleExternalContent" style={{backgroundColor:props.mode==="light"?"antiquewhite":"black"}} >
+      <nav className='navbar navbar-expand-lg bg-body-tertiary nav-tabs fixed-top mb-5' id="navbarToggleExternalContent" style={{backgroundColor:props.mode==="light"?"antiquewhite":"black"}} >
         <div className="container-fluid">
           <span>TextUtils</span>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
